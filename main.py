@@ -1,3 +1,5 @@
+pip install llmware #We need to install llmware module on notebook or on the system if running locally
+
 """ Sentiment Analysis for Restaurant Reviews - `llmware` Example
 
 This program analyzes sentiment of restaurant reviews using `llmware`.
@@ -17,7 +19,12 @@ restaurant_reviews = [
     "Overall, a decent experience. The food was average, but the service was good.",
     "Had a wonderful experience! The food was amazing, and the service was excellent."
 ]
+# We can change these to see different outputs
+# Or even use a file and read as given below
 
+# with open("path/file.txt","r") as file:
+#   restaurant_reviews = file.readlines()
+  
 
 def analyze_review_sentiment(text, confidence_threshold=0.8):
 
